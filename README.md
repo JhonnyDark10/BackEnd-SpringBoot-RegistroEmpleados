@@ -1,5 +1,7 @@
 # BackEnd-SpringBoot-RegistroEmpleados
 
+Para el proyecto se utilizo la herramienta de desarrollo "Intellij IDEA" y se creo la base del proyecto spring en https://start.spring.io/
+
 - verificar dentro de "src/main/resorce/application.properties"  su configuracion local de base de datos MySQL.
 
 #Data source
@@ -82,5 +84,7 @@ insert into sis_Area(area_descripcion,area_estado) values("Servicios Varios","A"
 - Ejecute en la terminal el programa
 
  ".\mvnw.cmd spring-boot:run"
+ 
+ - verifico en el navegador  http://localhost:8080/usuario   http://localhost:8080/tipos http://localhost:8080/areas http://localhost:8080/paises
  
  
