@@ -13,13 +13,6 @@ spring.datasource.url=jdbc:mysql://localhost:3306/sistemaregistro
 spring.datasource.username=root
 spring.datasource.password=12345
 
-#[Opcional]Imprime en tu consola las instrucciones hechas en tu base de datos.
-spring.jpa.show-sql = true
-
-#[Opcional]Crea las tablas.
-#spring.jpa.hibernate.ddl-auto=create
-
-
 - cree la base de datos 
 
 create database SistemaRegistro;
