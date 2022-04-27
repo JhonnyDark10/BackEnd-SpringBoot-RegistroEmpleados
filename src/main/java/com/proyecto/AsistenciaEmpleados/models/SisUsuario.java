@@ -1,10 +1,10 @@
 package com.proyecto.AsistenciaEmpleados.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "sis_usuarios")
@@ -30,6 +30,7 @@ public class SisUsuario implements Serializable {
     @JsonIgnoreProperties(value = {"applications", "hibernateLazyInitializer"})
     private SisTipoidentificacion usuIdTipo;
 
+
     @Column(name = "usu_apellido_paterno", nullable = false, length = 20)
     private String usuApellidoPaterno;
 
@@ -52,7 +53,7 @@ public class SisUsuario implements Serializable {
     private LocalDate usuFechaEdicion;
 
     @Column(name = "usu_fechahora_registro")
-    private LocalDate usuFechahoraRegistro;
+    private LocalDateTime usuFechahoraRegistro;
 
     @Column(name = "usu_estado", nullable = false)
     private Character usuEstado;
@@ -156,11 +157,11 @@ public class SisUsuario implements Serializable {
         this.usuFechaEdicion = usuFechaedicion;
     }
 
-    public LocalDate getUsuFechahoraregistro() {
+    public LocalDateTime getUsuFechahoraregistro() {
         return usuFechahoraRegistro;
     }
 
-    public void setUsuFechahoraregistro(LocalDate usuFechahoraregistro) {
+    public void setUsuFechahoraregistro(LocalDateTime usuFechahoraregistro) {
         this.usuFechahoraRegistro = usuFechahoraregistro;
     }
 

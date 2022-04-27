@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+
 @CrossOrigin(origins = "http://localhost:4200",maxAge  = 3600)
 @RestController
 @RequestMapping("/areas")
